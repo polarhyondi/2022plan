@@ -1,10 +1,5 @@
-<style type="text/css">
-  @font-face {
-    font-family:"seoulhangang";
-    src: url("/Fonts/SeoulHangangL.ttf") format("truetype");
-  }
-  body {font-family:seoulhangang;}
 
+  body {font-family: 'Hi Melody', cursive;}
   h1{text-align:center;
     border-bottom: 3px double black;
     border-top: 3px double black;
