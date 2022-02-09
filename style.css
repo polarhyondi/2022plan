@@ -1,0 +1,30 @@
+<style type="text/css">
+  @font-face {
+    font-family:"seoulhangang";
+    src: url("/Fonts/SeoulHangangL.ttf") format("truetype");
+  }
+  body {font-family:seoulhangang;}
+
+  h1{text-align:center;
+    border-bottom: 3px double black;
+    border-top: 3px double black;
+    padding:10px;
+    margin:10px;}
+
+
+  .menu{text-align:center;}
+  .menu ul{list-style:none;
+    margin:0;
+    padding:0;
+    display:inline-block;}
+  .menu li{margin:10px;
+    margin-left: 50px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    float:left;
+    }
+
+  a{text-decoration:none;
+    color:black;}
+
+  body{text-align:center;}
