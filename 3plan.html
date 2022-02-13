@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<script src="colors.js"></script>
 <style>
 table{width:700px;
   margin:auto;
@@ -35,7 +36,9 @@ td{width:10%;}}
     <li><a href="5schedule.html">스케줄</a></li>
 </ul>
 </div>
-
+<input type="button" value="rainbow" onclick="
+  colorchanger(this);
+  " style="float:right">
 <br>
 <h2 style="text-align:center">Hyunjin's 2022 Plans!</h2>
 <br>
@@ -44,32 +47,32 @@ td{width:10%;}}
   <tr>
       <td>아침 공복<br>유산소 운동</td><td>주1~2회<br>필라테스</td><td class="borderright">주1~2회<br>테니스</td>
       <td>주1회<br>전화스페인어</td><td>주1회<br>전화영어</td><td class="borderright">주1회<br>테드 강연</td>
-      <td>주1회 책1권<br>(총 50권 읽기)</td><td>책 리뷰 쓰기</td><td>독서3</td>
+      <td>주1회 책1권<br>(총 50권 읽기)</td><td>책 리뷰 쓰기</td><td></td>
   </tr>
   <tr>
-      <td>주5회<br>홈트/헬스장</td><td style="background:#C8707E; font-weight:bold">건강</td><td class="borderright">기상후&자기전<br>스트레칭</td>
-      <td>매일 기사 읽기</td><td style="background:#E48E58; font-weight:bold">공부</td><td class="borderright">OPIC<br>다시 보기</td>
-      <td>독서4</td><td style="background:#F0C7AB; font-weight:bold">독서</td><td>독서5</td>
+      <td>주5회<br>홈트/헬스장</td><td id="health" style="font-weight:bold"><a href="4-1.html">건강</a></td><td class="borderright">기상후&자기전<br>스트레칭</td>
+      <td>매일 기사 읽기</td><td id="study" style="font-weight:bold"><a href="4-2.html">공부</a></td><td class="borderright">OPIC<br>다시 보기</td>
+      <td></td><td id="book" style="font-weight:bold"><a href="4-3.html">독서</a></td><td></td>
   </tr>
   <tr style="border-bottom:2px solid black">
       <td>5km 마라톤<br>완주</td><td>건강하게 52kg<br>체지방율 25%<br>만들기</td><td class="borderright">간식, 디저트,<br>단 음료, 배달<br>음식 줄이기</td>
-      <td>이직하기</td><td>공부7</td><td class="borderright">공부8</td>
-      <td>독서6</td><td>독서7</td><td>독서8</td>
+      <td>이직하기</td><td></td><td class="borderright"></td>
+      <td></td><td></td><td></td>
   </tr>
   <tr>
-      <td>월1회<br>할머니네 가기</td><td>월1회 가족이랑<br>맛있는 외식</td><td class="borderright">사람3</td>
-      <td style="background:#C8707E; font-weight:bold">건강</td><td style="background:#E48E58; font-weight:bold">공부</td><td style="background:#F0C7AB; font-weight:bold" class="borderright">독서</td>
+      <td>월1회<br>할머니네 가기</td><td>월1회 가족이랑<br>맛있는 외식</td><td class="borderright"></td>
+      <td id="health" style="font-weight:bold"><a href="4-1.html">건강</a></td><td id="study" style="font-weight:bold"><a href="4-2.html">공부</a></td><td id="book" style="font-weight:bold" class="borderright"><a href="4-3.html">독서</a></td>
       <td>다이어리<br>꾸준히</td><td>여행 일기</td><td>폴라 육아 일기</td>
   </tr>
   <tr>
-      <td>사람4</td><td style="background:#EF84C1; font-weight:bold">사람</td><td class="borderright">사람5</td>
-      <td style="background:#EF84C1; font-weight:bold">사람</td><td style="font-size:25px"><strong>2022</strong></td><td style="background:#A8C879; font-weight:bold" class="borderright">기록</td>
-      <td>맛집&소비<br>추천글<br>(블로그)</td><td style="background:#A8C879; font-weight:bold">기록</td><td>월간 사진 일기<br>(블로그)</td>
+      <td></td><td id="people" style="font-weight:bold"><a href="4-8.html">사람</a></td><td class="borderright"></td>
+      <td id="people" style="font-weight:bold"><a href="4-8.html">사람</a></td><td style="font-size:25px"><strong>2022</strong></td><td id="record" style="font-weight:bold" class="borderright"><a href="4-4.html">기록</a></td>
+      <td>맛집&소비<br>추천글<br>(블로그)</td><td id="record" style="font-weight:bold"><a href="4-4.html">기록</a></td><td>월간 사진 일기<br>(블로그)</td>
   </tr>
   <tr style="border-bottom:2px solid black">
-      <td>사람6</td><td>사람7</td><td class="borderright">사람8</td>
-      <td style="background:#AC99C1; font-weight:bold">자기관리</td><td style="background:#4C92B1; font-weight:bold">취미</td><td style="background:#96B1D0; font-weight:bold" class="borderright">문화</td>
-      <td>감정 일기<br>(블로그)</td><td>호불호 정리<br>(블로그)</td><td>기록8</td>
+      <td></td><td></td><td class="borderright"></td>
+      <td id="selfmanagement" style="font-weight:bold"><a href="4-7.html">자기관리</a></td><td id="hobby" style="font-weight:bold"><a href="4-6.html">취미</a></td><td id="culture" style="font-weight:bold" class="borderright"><a href="4-5.html">문화</a></td>
+      <td>감정 일기<br>(블로그)</td><td>호불호 정리<br>(블로그)</td><td></td>
   </tr>
   <tr>
       <td>4천만원 모으기</td><td>쓸데없는 소비<br>안하기</td><td class="borderright">모닝&나이트<br>루틴 습관화</td>
@@ -77,14 +80,14 @@ td{width:10%;}}
       <td>월1회 영화 1편</td><td>격월1회<br>엄마랑 전시</td><td>월1회 파스타<br>맛집탐방</td>
   </tr>
   <tr>
-      <td>매일 아침<br>따뜻한 물</td><td style="background:#AC99C1; font-weight:bold">자기관리</td><td class="borderright">매일 영양제</td>
-      <td>파리 여행</td><td style="background:#4C92B1; font-weight:bold">취미</td><td class="borderright">강릉 씨마크<br>여행</td>
-      <td>문화4</td><td style="background:#96B1D0; font-weight:bold">문화</td><td>문화5</td>
+      <td>매일 아침<br>따뜻한 물</td><td id="selfmanagement" style="font-weight:bold"><a href="4-7.html">자기관리</a></td><td class="borderright">매일 영양제</td>
+      <td>파리 여행</td><td id="hobby"  style="font-weight:bold"><a href="4-6.html">취미</a></td><td class="borderright">강릉 씨마크<br>여행</td>
+      <td></td><td id="culture" style="font-weight:bold"><a href="4-5.html">문화</a></td><td></td>
   </tr>
   <tr>
       <td>샤워후<br>바디로션<br>습관화</td><td>자기전 팩<br>습관화</td><td class="borderright">자기전<br>전자기기<br>안보기 습관화</td>
-      <td>봄&가을<br>제주 여행</td><td>취미7</td><td class="borderright">취미8</td>
-      <td>문화6</td><td>문화7</td><td>문화8</td>
+      <td>봄&가을<br>제주 여행</td><td></td><td class="borderright"></td>
+      <td></td><td></td><td></td>
   </tr>
 </table>
 

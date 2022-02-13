@@ -19,7 +19,26 @@
     float:left;
     }
 
+    .plan{text-align:center; }
+    .plan ul{list-style:none;
+      margin:0;
+      padding:0;
+      display:inline-block;}
+    .plan li{margin:10px;
+      padding: 5px;
+      float:left;
+      }
+
   a{text-decoration:none;
     color:black;}
 
   body{text-align:center;}
+
+  #health{background-color:#FF8A8A;}
+  #study{background-color:#FFB38A;}
+  #book{background-color:#FFF28A;}
+  #record{background-color:#91FF8A;}
+  #culture{background-color:#8AFFF8;}
+  #hobby{background-color:#8A9CFF;}
+  #selfmanagement{background-color:#C48AFF;}
+  #people{background-color:#FF8AFB;}

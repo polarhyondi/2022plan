@@ -9,12 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 <script src="colors.js"></script>
 <style>
-
 </style>
+<script type="text/javascript">
+function doDisplay(){
+var con = document.getElementById("readingbooks");
+if(con.style.display=='none'){
+  con.style.display='block';
+}else{con.style.display='none';}
+}
+</script>
 </head>
-
 <body>
-
   <h1> <a href="index.html">2022 Planner </a> </h1>
   <div class="menu">
   <ul>
@@ -30,9 +35,9 @@
 <br>
 <div class="plan">
 <ul>
-  <li id="health"><a href="4-1.html">건강</a></li>
+  <li id="health" ><a href="4-1.html">건강</a></li>
   <li id="study"><a href="4-2.html">공부</a></li>
-  <li id="book"><a href="4-3.html">독서</a></li>
+  <li id="book" style="font-weight:bold"><a href="4-3.html">독서</a></li>
   <li id="record"><a href="4-4.html">기록</a></li>
   <li id="culture"><a href="4-5.html">문화</a></li>
   <li id="hobby"><a href="4-6.html">취미</a></li>
@@ -40,6 +45,21 @@
   <li id="people"><a href="4-8.html">사람</a></li>
 </ul>
 </div>
+
+<br>
+<a href="javascript:doDisplay();">- 주1회 책1권 (총 50권 읽기)</a>
+
+<div id="readingbooks" style="display:none">
+  <br>
+  1. 오늘밤, 이 세계에서 이 사랑이 사라진다 해도 <br>
+  2. 오늘부터 개발자 <br>
+  3. 트렌드 코리아 2022 <br>
+  4. 불편한 편의점 <br>
+  5. 공간의 미래 <br>
+  <br>
+</div>
+<br><br>
+- 책 리뷰 쓰기
 
 </body>
 </html>
